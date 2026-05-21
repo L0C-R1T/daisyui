@@ -24,7 +24,8 @@
   }
 
   function handleThemeCSSInput(event) {
-    const newThemeData = parseThemeCSS(event.target.value, currentTheme)
+    themeCSS = event.target.value
+    const newThemeData = parseThemeCSS(themeCSS, currentTheme)
     if (newThemeData) {
       currentTheme = newThemeData
       if (currentTheme.type === "custom") {
@@ -110,13 +111,14 @@
       <span class="text-base-content/40">Add it after</span>
       <span class="text-base-content/50 font-bold italic">@plugin "daisyui";</span></span
     >
-    <textarea
-      spellcheck="false"
-      data-theme="dark"
-      class="textarea textarea-border textarea-xs block h-96 min-h-80 w-full max-w-none resize-none font-mono"
-      bind:value={themeCSS}
-      oninput={handleThemeCSSInput}
-    ></textarea>
+    <div data-theme="dark">
+      <textarea
+        spellcheck="false"
+        class="textarea textarea-border textarea-xs block h-96 min-h-80 w-full max-w-none resize-none font-mono"
+        value={themeCSS}
+        oninput={handleThemeCSSInput}
+      ></textarea>
+    </div>
   </div>
   <div class="modal-backdrop" onclick={() => dialog.close()}></div>
 </dialog>

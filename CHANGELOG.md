@@ -2,6 +2,154 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 5.5.20 (2026-05-18)
+
+
+### Bug Fixes
+
+* dropdown animation inside a modal ([#4526](https://github.com/saadeghi/daisyui/issues/4526)) ([568d85f](https://github.com/saadeghi/daisyui/commit/568d85f6ec4d84a16244ac4c986fa20a976aca1e))
+
+## 5.5.19 (2026-02-20)
+
+
+### Bug Fixes
+
+* use logical margins for breadcrumbs so it works in RTL. closes: [#4443](https://github.com/saadeghi/daisyui/issues/4443) ([6208471](https://github.com/saadeghi/daisyui/commit/6208471c91234462a365c71f2f4a87e3b5f69ede))
+
+## 5.5.18 (2026-02-05)
+
+
+### Bug Fixes
+
+* apply `z-1` on box tab when focus-visible ([#4425](https://github.com/saadeghi/daisyui/issues/4425)) ([b2907eb](https://github.com/saadeghi/daisyui/commit/b2907eb92f5aa887f8ff8ea267c72ab6d0162a43)), closes [#4424](https://github.com/saadeghi/daisyui/issues/4424)
+
+## 5.5.17 (2026-02-02)
+
+## 5.5.16 (2026-02-01)
+
+## 5.5.15 (2026-02-01)
+
+
+### Bug Fixes
+
+* hide underline for `.btn` when used in `.prose` closes [#4400](https://github.com/saadeghi/daisyui/issues/4400) ([c1e1e11](https://github.com/saadeghi/daisyui/commit/c1e1e112545423f41fae99a4b3bf7379749bbebe))
+
+## 5.5.14 (2025-12-14)
+
+
+### Bug Fixes
+
+* z-index of focused join items. closes: [#4320](https://github.com/saadeghi/daisyui/issues/4320) ([5a37a13](https://github.com/saadeghi/daisyui/commit/5a37a1314220bc6724633c9b33411d8d1f901c6f))
+
+## 5.5.13 (2025-12-11)
+
+
+### Bug Fixes
+
+* allow `.list-col-wrap` to work with Tailwind CSS variant prefixes. closes: [#4336](https://github.com/saadeghi/daisyui/issues/4336) ([56ef803](https://github.com/saadeghi/daisyui/commit/56ef803c89f1e9bfa4e879a0f111d0a59ec885d8))
+
+## 5.5.12 (2025-12-11)
+
+
+### Bug Fixes
+
+* add transition for collapse `min-height`. closes: [#2615](https://github.com/saadeghi/daisyui/issues/2615) ([600ab73](https://github.com/saadeghi/daisyui/commit/600ab73a271e42433d078408f34265f684f617ce))
+
+## 5.5.11 (2025-12-10)
+
+
+### Bug Fixes
+
+* range color issue when there's a ling range slider on a ultrawide screen ([#4335](https://github.com/saadeghi/daisyui/issues/4335)). closes [#4334](https://github.com/saadeghi/daisyui/issues/4334) ([810f519](https://github.com/saadeghi/daisyui/commit/810f519eff7eda0498f23f86dc015d14a8799945))
+
+## 5.5.10 (2025-12-10)
+
+
+### Bug Fixes
+
+* rule priority for `.drawer-end` and `.drawer-open`. closes [#4331](https://github.com/saadeghi/daisyui/issues/4331) ([82e68d4](https://github.com/saadeghi/daisyui/commit/82e68d4ec793b5a9d415d090ba766eaa9b20a4ba))
+
+## 5.5.9 (2025-12-10)
+
+
+### Bug Fixes
+
+* improve root color. closes: [#4294](https://github.com/saadeghi/daisyui/issues/4294) ([5cf3e89](https://github.com/saadeghi/daisyui/commit/5cf3e89a08197288d3cad0188e313db5d77f38f6))
+
+## 5.5.8 (2025-12-03)
+
+
+### Bug Fixes
+
+* badge padding to respect --size-selector, clean up kbd and tab padding properties. closes: [#4293](https://github.com/saadeghi/daisyui/issues/4293) ([e713958](https://github.com/saadeghi/daisyui/commit/e7139585b3a35c40578777c0c70d8faae1c8f504))
+
+## 5.5.7 (2025-12-03)
+
+
+### Bug Fixes
+
+* cleanup a few instances of calc in tabs and FAB ([#4292](https://github.com/saadeghi/daisyui/issues/4292)) ([589c5ad](https://github.com/saadeghi/daisyui/commit/589c5ad766cdcb61947a003812eb4b4005f92629))
+
+## 5.5.6 (2025-12-03)
+
+### Bug Fixes
+
+* chat bubble height overflow on Safari ([e36afac](https://github.com/saadeghi/daisyui/commit/e36afacd5af19955caff8360befbc6ef38b1847c)), closes [github.com/saadeghi/daisyui/issues/3712#issuecomment-3599503502](https://github.com/saadeghi/daisyui/issues/3712/#issuecomment-3599503502)
+
+## 5.5.5 (2025-11-15)
+
+
+### Bug Fixes
+
+* button layer ([e3d3f5b](https://github.com/saadeghi/daisyui/commit/e3d3f5bed86706e41be727536109f93760ee6f2f)), closes [#4288](https://github.com/saadeghi/daisyui/issues/4288)
+
+## 5.5.4 (2025-11-14)
+
+
+### Bug Fixes
+
+* menu animation for 1st level menu in menu-horizontal ([#4278](https://github.com/saadeghi/daisyui/issues/4278)) ([3a7919a](https://github.com/saadeghi/daisyui/commit/3a7919a1ce0edff8eca6af9d0fa62c6cbd8bc290)), closes [#4273](https://github.com/saadeghi/daisyui/issues/4273)
+
+## 5.5.3 (2025-11-13)
+
+
+### Bug Fixes
+
+* table borders. closes: [#3723](https://github.com/saadeghi/daisyui/issues/3723) ([5cf7bf7](https://github.com/saadeghi/daisyui/commit/5cf7bf7b833197f3a8f19bfee496956de1258579))
+
+## 5.5.2 (2025-11-13)
+
+
+### Bug Fixes
+
+* prefix for `is-drawer-close` and `is-drawer-open`. closes: [#4197](https://github.com/saadeghi/daisyui/issues/4197) ([f3005f4](https://github.com/saadeghi/daisyui/commit/f3005f403b059e02c2d0868807a6de745d513b52))
+
+## 5.5.1 (2025-11-13)
+
+
+### Bug Fixes
+
+* layer nesting. closes: [#4209](https://github.com/saadeghi/daisyui/issues/4209) ([c20d12c](https://github.com/saadeghi/daisyui/commit/c20d12c92c51cefb5f26c95a9449ae3e9c3c4b11))
+
+## 5.5.0 (2025-11-11)
+
+### Features
+
+* new component `hover-3d` to make a 3D card
+* new component `text-rotate` to rotate between multiple words
+* new `skeleton` variant: `skeleton-text` for animated gradient text
+* improve `diff` drag area
+* improve `<code>` padding in `prose`. closes: #4243
+* new `dropdown` modifier: `dropdown-close` to force close a dropdown
+* `btn` selector improvements (7% smaller CSS size)
+* details in menu now has smooth transition
+
+### Docs
+
+* search now includes all class names and variables
+* update disable menu example to be more accessible
+* update llms.txt
+
 ## 5.4.7 (2025-11-06)
 
 

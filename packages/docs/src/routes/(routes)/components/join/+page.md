@@ -1,5 +1,5 @@
 ---
-title: Join
+title: Join (group items)
 desc: Join is a container for grouping multiple items, it can be used to group buttons, inputs, etc. Join applies border radius to the first and last item. Join can be used to create a horizontal or vertical list of items.
 source: https://raw.githubusercontent.com/saadeghi/daisyui/refs/heads/master/packages/daisyui/src/utilities/join.css
 layout: components
@@ -127,9 +127,9 @@ classnames:
 
 ### ~Join radio inputs with btn style
 <div class="join">
-  <input class="join-item btn" type="radio" name="options" aria-label="Radio 1" />
-  <input class="join-item btn" type="radio" name="options" aria-label="Radio 2" />
-  <input class="join-item btn" type="radio" name="options" aria-label="Radio 3" />
+  <input class="join-item btn" type="radio" name="options" autocomplete="off" aria-label="Radio 1" />
+  <input class="join-item btn" type="radio" name="options" autocomplete="off" aria-label="Radio 2" />
+  <input class="join-item btn" type="radio" name="options" autocomplete="off" aria-label="Radio 3" />
 </div>
 
 ```html

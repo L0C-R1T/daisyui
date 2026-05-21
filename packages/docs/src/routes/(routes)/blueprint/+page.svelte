@@ -1,6 +1,7 @@
 <script>
   import SEO from "$components/SEO.svelte"
-  import Footer from "$components/Footer.svelte"
+  import StoreFooter from "$components/StoreFooter.svelte"
+
   let dialogs = $state({})
 
   let videoModal = $state({
@@ -170,6 +171,7 @@
     href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap"
     rel="stylesheet"
   />
+  <script src="https://www.evendeals.com/banner.js"></script>
 </svelte:head>
 
 <div class="w-full px-4 pt-20 md:px-20" dir="ltr">
@@ -178,7 +180,7 @@
   <div>
     <div class="inline-block">
       <div class="me-6 -mb-2 self-end text-end font-mono text-[0.625rem] text-blue-600">
-        Version 1.1
+        Version 1.2
       </div>
       <div class="mb-4 inline-grid grid-cols-[1rem_1fr_1rem] grid-rows-[1rem_1fr_1rem]">
         <div class="border-s-2 border-t-2 border-blue-600 [grid-area:1/1/2/2]"></div>
@@ -4090,7 +4092,7 @@
             F.A.Q
           </h2>
           <p class="text-base-content/60 text-xs">
-            If you have any questions before purchase <br />send me an email to pouya@daisyui.com
+            If you have any questions before purchase <br />send me an email to help@daisyui.com
             <br />I will do my best to help you.
           </p>
         </div>
@@ -4149,8 +4151,9 @@
             <div
               class="collapse-content text-base-content/70 border-base-content/10 ms-4 border-s-2 px-6 text-xs"
             >
-              Yes you can cancel your subscription at any time. If you cancel, you will still have
-              access to the product until the end of your billing cycle.
+              Yes you can cancel your subscription at any time at
+              https://www.creem.io/my-orders/login. If you cancel, you will still have access to the
+              product until the end of your billing cycle.
             </div>
           </div>
           <div class="collapse-plus collapse">
@@ -4490,10 +4493,11 @@
 
           <div class="mockup-code my-2 w-full leading-none">
             <pre><code class="text-xs"
-                >claude mcp add daisyui-blueprint -- npx -y daisyui-blueprint@latest
+                >claude mcp add daisyui-blueprint
     --env LICENSE=<span class="text-info">YOUR_LICENSE_KEY</span>
     --env EMAIL=<span class="text-info">YOUR_EMAIL</span>
-    --env FIGMA=<span class="text-info">YOUR_FIGMA_API_KEY</span></code
+    --env FIGMA=<span class="text-info">YOUR_FIGMA_API_KEY</span>
+    -- npx -y daisyui-blueprint@latest</code
               ></pre>
           </div>
 
@@ -4718,7 +4722,7 @@
   </form>
 </dialog> -->
 
-<Footer />
+<StoreFooter />
 
 <style>
   @keyframes fade-in {

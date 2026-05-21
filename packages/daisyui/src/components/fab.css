@@ -1,5 +1,5 @@
 .fab {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     @apply pointer-events-none fixed end-4 bottom-4 z-999 flex flex-col-reverse items-end gap-2 text-sm whitespace-nowrap;
     > * {
       @apply pointer-events-auto flex items-center gap-2;
@@ -73,7 +73,7 @@
   }
 }
 .fab-flower {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     @apply grid;
     --position: 0rem;
     > *:nth-child(-n + 2) {
@@ -84,10 +84,10 @@
       --degree: 180deg;
       --flip-degree: calc(180deg - var(--degree));
       transform: translateX(calc(cos(var(--degree)) * var(--position)))
-        translateY(calc(sin(var(--degree)) * calc(-1 * var(--position))));
+        translateY(calc(sin(var(--degree)) * -1 * var(--position)));
       [dir="rtl"] & {
         transform: translateX(calc(cos(var(--flip-degree)) * var(--position)))
-          translateY(calc(sin(var(--flip-degree)) * calc(-1 * var(--position))));
+          translateY(calc(sin(var(--flip-degree)) * -1 * var(--position)));
       }
     }
     > :nth-child(n + 7) {

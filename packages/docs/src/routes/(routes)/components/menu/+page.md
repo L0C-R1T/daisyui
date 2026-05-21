@@ -16,7 +16,7 @@ classnames:
     desc: For the toggle to show/hide the menu-dropdown using JS
   modifier:
   - class: menu-disabled
-    desc: For disabling a <li>
+    desc: For the element inside <li> to look disabled
   - class: menu-active
     desc: For the element inside <li> to look active
   - class: menu-focus
@@ -418,21 +418,26 @@ classnames:
 </ul>
 ```
 
-
 ### ~Menu with disabled items
 <ul class="menu bg-base-200 w-56 rounded-box">
   <li><button>Enabled item</button></li>
-  <li class="menu-disabled"><button>disabled item</button></li>
-  <li class="menu-disabled"><button>disabled item</button></li>
+  <li class="menu-disabled"><button disabled>disabled item</button></li>
+  <li class="menu-disabled"><button disabled>disabled item</button></li>
 </ul>
 
 ```html
 <ul class="$$menu bg-base-200 $$rounded-box w-56">
   <li><a>Enabled item</a></li>
-  <li class="$$menu-disabled"><a>disabled item</a></li>
-  <li class="$$menu-disabled"><a>disabled item</a></li>
+  <li class="$$menu-disabled"><button disabled>disabled item</button></li>
+  <li class="$$menu-disabled"><a role="link" aria-disabled="true">disabled item</a></li>
 </ul>
 ```
+
+> :INFO:
+>
+> `menu-disabled` disables an item visually.
+> To disable a `<button>` add a `disabled` attribute.
+> To disable a `<a>`, remove the `href` attribute and add `role="link" aria-disabled="true"` attributes.
 
 
 ### ~Menu with icons

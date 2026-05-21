@@ -1,6 +1,7 @@
 ---
-title: Colors
-desc: How to use daisyUI colors?
+title: daisyUI colors
+desc: How to use daisyUI semantic colors and theme-aware color variables in Tailwind CSS.
+keywords: daisyui colors, tailwind colors, semantic colors, color variables, theme colors
 ---
 
 <script>
@@ -9,7 +10,7 @@ desc: How to use daisyUI colors?
 
 ## <Translate text="Introduction" />
 
-<Translate text="daisyUI is fully themeable and colorable," />
+<Translate text="daisyUI is fully themeable and colorable in Tailwind CSS," />
 <Translate text="So instead of using constant color utility classes like:" />
 
 - <span class="badge badge-xs bg-green-500"></span> bg-green-500
@@ -112,7 +113,7 @@ _Using semantic color names_
 | <span class="badge bg-accent"></span>            | accent            | `--color-accent`            | Accent brand color, The optional, accent color of your brand       |
 | <span class="badge bg-accent-content"></span>    | accent-content    | `--color-accent-content`    | Foreground content color to use on `accent` color <br/><br/>       |
 | <span class="badge bg-neutral"></span>           | neutral           | `--color-neutral`           | Neutral dark color, For not-saturated parts of UI                  |
-| <span class="badge bg-neutral-content"></span>   | neutral-content   | `--color-neutral-content`   | Foreground content color to use on neutral color <br/><br/>        |
+| <span class="badge bg-neutral-content"></span>   | neutral-content   | `--color-neutral-content`   | Foreground content color to use on `neutral` color <br/><br/>      |
 | <span class="badge bg-base-100"></span>          | base-100          | `--color-base-100`          | Base surface color of page, used for blank backgrounds             |
 | <span class="badge bg-base-200"></span>          | base-200          | `--color-base-200`          | Base color, darker shade, to create elevations                     |
 | <span class="badge bg-base-300"></span>          | base-300          | `--color-base-300`          | Base color, even more darker shade, to create elevations           |

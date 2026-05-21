@@ -38,9 +38,14 @@ export const pages = [
         href: "/docs/use/",
       },
       {
-        name: "Code editor & LLM setup",
-        href: "/docs/editor/",
-        badge: "updated",
+        name: "daisyUI Skill",
+        href: "/docs/skill/",
+        badge: "new",
+      },
+      {
+        name: "MCP servers",
+        href: "/docs/mcp/",
+        badge: "new",
       },
       // {
       //   name: "v5 upgrade guide",
@@ -101,7 +106,6 @@ export const pages = [
           {
             name: "FAB / Speed Dial",
             href: "/components/fab/",
-            badge: "new",
           },
           {
             name: "Modal",
@@ -152,16 +156,18 @@ export const pages = [
           {
             name: "Countdown",
             href: "/components/countdown/",
-            badge: "updated",
           },
           {
             name: "Diff",
             href: "/components/diff/",
           },
           {
+            name: "Hover 3D card",
+            href: "/components/hover-3d/",
+          },
+          {
             name: "Hover Gallery",
             href: "/components/hover-gallery/",
-            badge: "new",
           },
           {
             name: "Kbd",
@@ -182,6 +188,10 @@ export const pages = [
           {
             name: "Table",
             href: "/components/table/",
+          },
+          {
+            name: "Text Rotate",
+            href: "/components/text-rotate/",
           },
           {
             name: "Timeline",
@@ -309,7 +319,6 @@ export const pages = [
           {
             name: "Select",
             href: "/components/select/",
-            badge: "updated",
           },
           {
             name: "Input field",
@@ -340,7 +349,6 @@ export const pages = [
           {
             name: "Drawer sidebar",
             href: "/components/drawer/",
-            badge: "updated",
           },
           {
             name: "Footer",

@@ -3,7 +3,7 @@
 }
 
 .collapse {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     display: grid;
     position: relative;
     overflow: hidden;
@@ -91,7 +91,7 @@
     }
   }
 
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     &:is([open]) {
       &.collapse-arrow {
         > .collapse-title:after {
@@ -161,14 +161,14 @@
 
 .collapse-title,
 .collapse-content {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     grid-column-start: 1;
     grid-row-start: 1;
   }
 }
 
 .collapse-content {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     content-visibility: hidden;
     grid-column-start: 1;
     grid-row-start: 2;
@@ -183,21 +183,23 @@
       transition:
         content-visibility 0.2s allow-discrete,
         visibility 0.2s allow-discrete,
-        padding 0.2s ease-out,
+        min-height 0.2s ease-out allow-discrete,
+        padding 0.1s ease-out 20ms,
         background-color 0.2s ease-out;
     }
   }
 }
 
 .collapse:is(details) {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     width: 100%;
     @media (prefers-reduced-motion: no-preference) {
       &::details-content {
         transition:
           content-visibility 0.2s allow-discrete,
           visibility 0.2s allow-discrete,
-          padding 0.2s ease-out,
+          min-height 0.2s ease-out allow-discrete,
+          padding 0.1s ease-out 20ms,
           background-color 0.2s ease-out,
           height 0.2s;
         height: 0;
@@ -224,13 +226,13 @@
 }
 
 .collapse:is(details) summary {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     outline: none;
   }
 }
 
 .collapse-arrow {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     > .collapse-title:after {
       position: absolute;
       display: block;
@@ -253,7 +255,7 @@
 }
 
 .collapse-plus {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     > .collapse-title:after {
       position: absolute;
       display: block;
@@ -274,7 +276,7 @@
 }
 
 .collapse-title {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     position: relative;
 
     width: 100%;
@@ -284,8 +286,9 @@
     transition: background-color 0.2s ease-out;
   }
 }
+
 .collapse-open {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     grid-template-rows: max-content 1fr;
     > .collapse-content {
       content-visibility: visible;

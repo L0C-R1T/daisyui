@@ -106,6 +106,8 @@ async function generateFiles() {
           "skeleton",
           "swap",
           "validator",
+          "hover3d",
+          "textrotate",
         ],
         layer: "utilities",
       }),
@@ -151,6 +153,7 @@ async function generateFiles() {
 
 async function build() {
   try {
+    // eslint-disable-next-line no-unused-expressions
     !isDev &&
       (await removeFiles([
         "base",
@@ -166,6 +169,7 @@ async function build() {
     console.time(`${decodeURIComponent("%F0%9F%8C%BC")} ${atob("ZGFpc3lVSQ==")} ${version}`)
     await generateFiles()
     console.timeEnd(`${decodeURIComponent("%F0%9F%8C%BC")} ${atob("ZGFpc3lVSQ==")} ${version}`)
+    // eslint-disable-next-line no-unused-expressions
     !isDev &&
       (await report([
         "base",

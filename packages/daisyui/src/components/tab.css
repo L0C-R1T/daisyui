@@ -1,5 +1,5 @@
 .tabs {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     @apply flex flex-wrap;
     --tabs-height: auto;
     --tabs-direction: row;
@@ -10,7 +10,7 @@
 }
 
 .tab {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     @apply hover:text-base-content relative inline-flex cursor-pointer appearance-none flex-wrap items-center justify-center text-center select-none;
     --tab-p: 0.75rem;
     --tab-bg: var(--color-base-100);
@@ -24,15 +24,14 @@
     --tab-radius-limit: min(var(--radius-field), var(--tab-radius-min));
     --tab-radius-grad:
       #0000 calc(69% - var(--border)),
-      var(--tab-border-color) calc(calc(69% - var(--border)) + 0.25px),
-      var(--tab-border-color) calc(calc(69% - var(--border)) + var(--border)),
-      var(--tab-bg) calc(calc(69% - var(--border)) + var(--border) + 0.25px);
+      var(--tab-border-color) calc(69% - var(--border) + 0.25px),
+      var(--tab-border-color) 69%,
+      var(--tab-bg) calc(69% + 0.25px);
     border-color: #0000;
     order: var(--tab-order);
     height: var(--tab-height);
     font-size: 0.875rem;
-    padding-inline-start: var(--tab-p);
-    padding-inline-end: var(--tab-p);
+    padding-inline: var(--tab-p);
 
     &:is(input[type="radio"]) {
       @apply min-w-fit;
@@ -95,7 +94,7 @@
 }
 
 .tab-content {
-  @layer daisyui.component {
+  @layer daisyui.l1.l2.l3 {
     @apply order-1 hidden border-transparent;
     --tabcontent-radius-ss: var(--radius-box);
     --tabcontent-radius-se: var(--radius-box);
@@ -116,13 +115,13 @@
 }
 
 .tab-disabled {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     @apply pointer-events-none opacity-40;
   }
 }
 
 .tabs-border {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     > .tab {
       --tab-border-color: #0000 #0000 var(--tab-border-color) #0000;
       position: relative;
@@ -154,7 +153,7 @@
 }
 
 .tabs-lift {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tabs-height: auto;
     --tabs-direction: row;
 
@@ -259,7 +258,7 @@
 }
 
 .tabs-top {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tabs-height: auto;
     --tabs-direction: row;
 
@@ -326,7 +325,7 @@
 }
 
 .tabs-bottom {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tabs-height: auto;
     --tabs-direction: row;
 
@@ -390,7 +389,7 @@
 }
 
 /* .tabs-start {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tabs-height: 10rem;
     --tabs-direction: column;
 
@@ -448,7 +447,7 @@
 } */
 
 .tabs-box {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     @apply bg-base-200 p-1;
     /*
       using --tabs-box-radius CSS variable to avoid Nuxt build issue
@@ -456,7 +455,7 @@
     */
     --tabs-box-radius: calc(3 * var(--radius-field));
     border-radius: calc(
-      min(calc(var(--tab-height) / 2), var(--radius-field)) + min(0.25rem, var(--tabs-box-radius))
+      min(var(--tab-height) / 2, var(--radius-field)) + min(0.25rem, var(--tabs-box-radius))
     );
     box-shadow:
       0 -0.5px oklch(100% 0 0 / calc(var(--depth) * 0.1)) inset,
@@ -469,6 +468,9 @@
       &:focus-visible,
       &:is(label:has(:checked:focus-visible)) {
         outline-offset: 2px;
+      }
+      &:focus-visible {
+        @apply z-1;
       }
     }
 
@@ -492,7 +494,7 @@
       /* Compensate for p-1 */
       height: calc(100% - var(--tab-height) + var(--border) - 0.5rem);
       border-radius: calc(
-        min(calc(var(--tab-height) / 2), var(--radius-field)) +
+        min(var(--tab-height) / 2, var(--radius-field)) +
           min(0.25rem, var(--tabs-box-radius)) - var(--border)
       );
     }
@@ -500,7 +502,7 @@
 }
 
 .tabs-xs {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tab-height: calc(var(--size-field, 0.25rem) * 6);
     & > .tab {
       font-size: 0.75rem;
@@ -511,7 +513,7 @@
 }
 
 .tabs-sm {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tab-height: calc(var(--size-field, 0.25rem) * 8);
     & > .tab {
       font-size: 0.875rem;
@@ -522,7 +524,7 @@
 }
 
 .tabs-md {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tab-height: calc(var(--size-field, 0.25rem) * 10);
     & > .tab {
       font-size: 0.875rem;
@@ -533,7 +535,7 @@
 }
 
 .tabs-lg {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tab-height: calc(var(--size-field, 0.25rem) * 12);
     & > .tab {
       font-size: 1.125rem;
@@ -544,7 +546,7 @@
 }
 
 .tabs-xl {
-  @layer daisyui.modifier {
+  @layer daisyui.l1.l2 {
     --tab-height: calc(var(--size-field, 0.25rem) * 14);
     & > .tab {
       font-size: 1.125rem;

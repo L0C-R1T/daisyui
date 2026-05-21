@@ -21,7 +21,7 @@
   }
 </script>
 
-<div class="join">
+<div class="join z-2">
   <button
     class="btn join-item btn-sm lg:min-w-28"
     aria-label="Copy markdown to clipboard"
@@ -63,7 +63,12 @@
   </button>
 
   <div class="dropdown dropdown-end not-prose">
-    <div tabindex="0" class="join-item btn btn-square btn-sm -ms-[var(--border)]" role="button" aria-label="More actions">
+    <div
+      tabindex="0"
+      class="join-item btn btn-square btn-sm -ms-[var(--border)]"
+      role="button"
+      aria-label="More actions"
+    >
       <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
         <path
           fill-rule="evenodd"
