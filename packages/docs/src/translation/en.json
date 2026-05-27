@@ -1154,5 +1154,9 @@
   "The `hr` tag at the beginning or end of each item, displays a line to connect items.": "The `hr` tag at the beginning or end of each item, displays a line to connect items.",
   "Inbox": "Inbox",
   "In chat window type this and write your prompt": "In chat window type this and write your prompt",
-  "`base-content` is the text color of the page by default. It's a dark color on light themes and it's a light color on dark themes.": "`base-content` is the text color of the page by default. It's a dark color on light themes and it's a light color on dark themes."
+  "`base-content` is the text color of the page by default. It's a dark color on light themes and it's a light color on dark themes.": "`base-content` is the text color of the page by default. It's a dark color on light themes and it's a light color on dark themes.",
+  "don't re-invent <br/>the wheel <br/>every time": "don't re-invent <br/>the wheel <br/>every time",
+  "component library": "component library",
+  "for Tailwind CSS": "for Tailwind CSS",
+  "For Radial progress we need to use a `div` instead of the `progress` tag because browsers can't show text inside `progress` tag, and Firefox doesn't render pseudo-elements inside `progress` tag at all.": "For Radial progress we need to use a `div` instead of the `progress` tag because browsers can't show text inside `progress` tag, and Firefox doesn't render pseudo-elements inside `progress` tag at all."
 }
